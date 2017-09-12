@@ -3,7 +3,7 @@ angular.module('video-player')
 
   bindings: {
     video: '<',
-    //nameVideo: '<'
+    setVideoEntry: '&'
   },
 
   controller: function() {
@@ -16,8 +16,11 @@ angular.module('video-player')
     // this.testVideo = ;
     // debugger;
     // var ctrl = this;
-    this.onClick = function() {
-      console.log(this.video);
+    var ctrl = this;
+    // ctrl.test = 'string';
+    ctrl.onVideoEntryClick = function() {
+      // console.log(this);
+      ctrl.setVideoEntry();
     };
 
     // console.log(this.testVideo);
