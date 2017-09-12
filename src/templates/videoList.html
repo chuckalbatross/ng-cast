@@ -2,6 +2,6 @@
   <video-list-entry
     video="video"
     ng-repeat="video in $ctrl.videos"
-    set-video-entry="$ctrl.setVideoList()"
+    set-curr-video="$ctrl.setCurrVideo({videoObj: videoObj})"
   ></video-list-entry>
 </ul>

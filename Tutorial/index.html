@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html ng-app>
+<head>
+  <title>Hello World, AngularJS - ViralPatel.net</title>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+</head>
+<body>
+  
+  Write some text in textbox:
+  <input type="text" ng-model="sometext" />
+
+  <h1 ng-show="sometext">Hello {{ sometext }}</h1>
+
+  <h4>Uppercase: {{ sometext | uppercase }}</h4>
+  <h4>Lowercase: {{ sometext | lowercase }}</h4>
+
+</body>
+</html>
+
+
+
+<!--  <input type="text" ng-model="sometext" />
+      <h1>Hello {{ sometext }}</h1>
+
+     TWO-WAY DATA BINDING: We define attribute ng-model in textbox as ng-model=”sometext”. ng-model binds the state of textbox with model value. In our case we define a model sometext. This model value is bound with the value of textbox using ng-model attribute. Thus when the textbox value changes, Angular automatically changes the model sometext with this value. This is called Two way data binding. Similarly, if we change the model value than Angular will change the value of textbox. Two way data binding is the core of Angular’s magical spell. It just works. You’ll get to know about it more once we start adding complexity in our application.
+      Q: in slide 14, {{ message }} is from $scope. But here, it's automatically bound to ng-model. Why is that???
+      A: The ng-model directive binds the value of HTML controls (input, select, textarea) to application data. -->
+
+
+<!-- ng-show attribute conditionally show an element, depending on the value of a boolean expression. Similar to ng-show you can also use ng-hide, which exactly does opposite of ng-show. -->
+
+<!-- /////////////////////////////////////////////////////////////
+AngularJS Filters
+/////////////////////////////////////////////////////////////
+
+Filters typically transform the data to a new data type, formatting the data in the process. The general syntax for using filter is:
+
+{{ expression | filter }} -->

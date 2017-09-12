@@ -3,7 +3,7 @@ angular.module('video-player')
 
   bindings: {
     videos: '<',
-    setVideo: '&'
+    setCurrVideo: '&'
   },
 
   controller: function() {
@@ -13,12 +13,16 @@ angular.module('video-player')
     // this.onClick = function() {
     //   console.log(this.video);
     // };
-    var ctrl = this;
-    ctrl.setVideoList = function(passedVideo) {
-      console.log('setVideoList Called');
-      debugger;
-      ctrl.setVideo(passedVideo);
-    };
+
+
+    // var ctrl = this;
+    // ctrl.setVideoList = function(passedVideo) {
+    //   console.log('setVideoList Called');
+    //   debugger;
+    //   ctrl.setVideo(passedVideo);
+    // };
+
+
     // ctrl.setVideo = function () {
     //   console.log('setVideo videoList called');
     // };
