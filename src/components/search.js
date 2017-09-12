@@ -1,13 +1,13 @@
 angular.module('video-player')
-.component('search', {
+  .component('search', {
 
-  bindings: {
-    searchYoutube: '&'
-  },
+    bindings: {
+      searchYoutube: '&',
+      updateVideos: '&'
+    },
 
-  controller: function() {
-
-  },
+    controller: function() {
+    },
   
-  templateUrl: 'src/templates/search.html'
-});
+    templateUrl: 'src/templates/search.html'
+  });

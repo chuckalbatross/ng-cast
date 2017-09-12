@@ -1,18 +1,17 @@
 angular.module('video-player')
+  .component('videoPlayer', {
 
-.component('videoPlayer', {
+    bindings: {
+      videoPlay: '<'
+    },
 
-  bindings: {
-    videoPlay: '<'
-  },
+    controller: function() {
 
-  controller: function() {
+      this.getIFrameSrc = function(videoId) {
+        return 'https://www.youtube.com/embed/' + videoId;
+      };
+      
+    },
 
-    this.getIFrameSrc = function(videoId) {
-      return 'https://www.youtube.com/embed/' + videoId;
-    };
-    
-  },
-
-  templateUrl: 'src/templates/videoPlayer.html'
-});
+    templateUrl: 'src/templates/videoPlayer.html'
+  });
