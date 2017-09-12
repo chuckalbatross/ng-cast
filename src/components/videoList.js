@@ -1,12 +1,12 @@
 angular.module('video-player')
-.component('videoList', {
+  .component('videoList', {
 
-  bindings: {
-    videos: '<',
-    setCurrVideo: '&'
-  },
+    bindings: {
+      videos: '<',
+      setCurrVideo: '&'
+    },
 
-  controller: function() {
+    controller: function() {
     // var videoListCtrl = this;
     // this.testVideos = window.exampleVideoData;
     // debugger;
@@ -26,10 +26,10 @@ angular.module('video-player')
     // ctrl.setVideo = function () {
     //   console.log('setVideo videoList called');
     // };
-  },
+    },
 
-  templateUrl: 'src/templates/videoList.html'
+    templateUrl: 'src/templates/videoList.html'
 
-});
+  });
 
 

@@ -1,7 +1,11 @@
 angular.module('video-player')
-
 .component('search', {
-  controller: () => {
+
+  bindings: {
+    searchYoutube: '&'
+  },
+
+  controller: function() {
 
   },
   

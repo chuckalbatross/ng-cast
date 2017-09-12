@@ -1,19 +1,21 @@
 angular.module('video-player')
+  .component('app', {
 
-.component('app', {
+    controller: function(youTube) {
 
-  controller: function() {
-    var ctrl = this;
-    this.videos = window.exampleVideoData;
+      this.searchYoutube = function() {
+        // youTube.searchYouTube(searchQuery);
+        console.log('searchYoutube called');
+      }
 
-    this.currVideo = window.exampleVideoData[0];
+      this.videos = window.exampleVideoData;
+      this.currVideo = window.exampleVideoData[0];
 
-    ctrl.setCurrVideo = function(videoObj) {
-      console.log('setCurrVideo Called');
-      debugger;
-      this.currVideo = videoObj.video;
-    };
-  },
+      this.setCurrVideo = function(videoObj) {
+        this.currVideo = videoObj.video;
+      };
+      
+    },
 
-  templateUrl: 'src/templates/app.html'
-});
+    templateUrl: 'src/templates/app.html'
+  });
