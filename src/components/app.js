@@ -1,3 +1,6 @@
+//ES5: const angular = require('angular');
+import angular from 'angular';
+
 angular.module('video-player')
   .component('app', {
 
